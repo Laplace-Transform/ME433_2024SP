@@ -15,6 +15,6 @@ pico_sdk_init()
 # Add multi example
 
 #add_subdirectory(CDC)
-add_subdirectory(GPIO)
+#add_subdirectory(GPIO)
 #add_subdirectory(ADC)
 add_subdirectory(MAIN)

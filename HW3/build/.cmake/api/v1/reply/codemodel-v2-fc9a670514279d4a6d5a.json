@@ -9,8 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						81,
-						82
+						81
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -581,9 +580,9 @@
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/boot_stage2",
 					"targetIndexes" : 
 					[
+						1,
 						2,
-						3,
-						4
+						3
 					]
 				},
 				{
@@ -844,7 +843,7 @@
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_cyw43_driver",
 					"targetIndexes" : 
 					[
-						5
+						4
 					]
 				},
 				{
@@ -1011,21 +1010,6 @@
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/docs"
 				},
 				{
-					"build" : "GPIO",
-					"jsonFile" : "directory-GPIO-Debug-45dd02b901d04f4fd1d9.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.13"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "GPIO",
-					"targetIndexes" : 
-					[
-						0
-					]
-				},
-				{
 					"build" : "MAIN",
 					"jsonFile" : "directory-MAIN-Debug-8fc1ed6b4e7f21838df3.json",
 					"minimumCMakeVersion" : 
@@ -1037,7 +1021,7 @@
 					"source" : "MAIN",
 					"targetIndexes" : 
 					[
-						1
+						0
 					]
 				}
 			],
@@ -1052,14 +1036,12 @@
 					"directoryIndexes" : 
 					[
 						0,
-						81,
-						82
+						81
 					],
 					"name" : "my_project",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				},
 				{
@@ -1150,10 +1132,10 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
+						1,
 						2,
 						3,
-						4,
-						5
+						4
 					]
 				}
 			],
@@ -1161,13 +1143,6 @@
 			[
 				{
 					"directoryIndex" : 81,
-					"id" : "GPIO::@c8158585e89fb8a9f8ab",
-					"jsonFile" : "target-GPIO-Debug-1e03981e839fb6490ccc.json",
-					"name" : "GPIO",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 82,
 					"id" : "MAIN::@93173a1e834a3cba0df0",
 					"jsonFile" : "target-MAIN-Debug-3d26e2238e432e8f3042.json",
 					"name" : "MAIN",
