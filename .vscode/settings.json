@@ -1,0 +1,13 @@
+{
+    "cmake.environment": {
+    "PICO_SDK_PATH":"C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk"
+    },
+    "files.associations": {
+      "stdlib.h": "c",
+      "pico.h": "c",
+      "gpio.h": "c",
+      "adc.h": "c",
+      "string.h": "c"
+    },
+    "cmake.sourceDirectory": "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW3",
+  }

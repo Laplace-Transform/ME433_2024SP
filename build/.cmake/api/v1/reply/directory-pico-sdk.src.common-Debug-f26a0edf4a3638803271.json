@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pico-sdk/src/common",
+		"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/common"
+	}
+}
