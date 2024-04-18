@@ -1,13 +1,13 @@
 # ninja log v5
+724	1060	7343867361328619	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/common/pico_sync/critical_section.c.obj	2b7ee5c6fecbdeda
+1980	2233	7343867372952512	GPIO/CMakeFiles/GPIO.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj	4124e98bbf757e5b
 49	206	7343867352848810	pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	6a13d712a66f6df9
 2060	2437	7343867374882414	GPIO/CMakeFiles/GPIO.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj	cbf9bdf8f7cf130f
-1980	2233	7343867372952512	GPIO/CMakeFiles/GPIO.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj	4124e98bbf757e5b
-724	1060	7343867361328619	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/common/pico_sync/critical_section.c.obj	2b7ee5c6fecbdeda
+696	869	7343867359319642	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	1ebad731eb0957e0
 1453	2059	7343867369082459	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj	22334ddc7cdad6ca
 1060	1424	7343867363964727	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj	b6871a3880fec4bb
 709	1049	7343867361024294	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/common/pico_sync/lock_core.c.obj	50cedf7f843328a0
 2559	2865	7343867377952576	GPIO/CMakeFiles/GPIO.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj	4fd075e49cb42e87
-696	869	7343867359319642	CDC/CMakeFiles/CDC.dir/C_/Users/59201/Desktop/NU/2024_Spring/ME433/Pico_examples_and_SDK/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	1ebad731eb0957e0
 208	443	7343867354038895	pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf	8a217bab67e3a0b8
 527	653	7343867357318071	pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S	61a14429f3f423f9
 443	526	7343867356098342	pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin	cfb2521a51136dd1

@@ -37,7 +37,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/CMakeFiles/3.25.2/CMakeSystem.cmake"
+			"path" : "build/CMakeFiles/3.25.2/CMakeSystem.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -58,11 +58,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
+			"path" : "build/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
+			"path" : "build/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -156,7 +156,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/CMakeFiles/3.25.2/CMakeASMCompiler.cmake"
+			"path" : "build/CMakeFiles/3.25.2/CMakeASMCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -474,6 +474,26 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/lib/tinyusb/hw/bsp/family_support.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/lib/tinyusb/hw/bsp/rp2040/pico_sdk_import.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/pico_sdk_init.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/lib/tinyusb/hw/bsp/rp2040/boards/pico_sdk/board.cmake"
+		},
+		{
+			"isExternal" : true,
 			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_stdio_usb/CMakeLists.txt"
 		},
 		{
@@ -491,6 +511,18 @@
 		{
 			"isExternal" : true,
 			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk-tools/pico-sdk-tools-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk-tools/pico-sdk-tools-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,
@@ -560,7 +592,7 @@
 			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/FindPackageMessage.cmake"
 		},
 		{
-			"path" : "CDC/CMakeLists.txt"
+			"path" : "DAC/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,
@@ -574,8 +606,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build",
-		"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW3"
+		"build" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW4/build",
+		"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW4"
 	},
 	"version" : 
 	{

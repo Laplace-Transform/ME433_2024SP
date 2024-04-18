@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -407,10 +407,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/arm-none-eabi-gcc.exe"
 		},
 		{
@@ -891,7 +891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "81"
+			"value" : "82"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1286,6 +1286,18 @@
 			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
 		},
 		{
+			"name" : "FAMILY_MCUS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "RP2040"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python3",
 			"properties" : 
 			[
@@ -1451,7 +1463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/cmsis C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/cmsis C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040/hardware_regs C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/cmsis C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040/hardware_regs C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/cmsis C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1463,7 +1475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/common C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040"
+			"value" : " C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/common C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/lib/cyw43-driver/src C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040"
 		},
 		{
 			"name" : "PICO_NO_FLASH",
@@ -1704,6 +1716,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "7697529fd6ca768c7b543b4f65095308"
+		},
+		{
+			"name" : "_Python3_Interpreter_REASON_FAILURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Interpreter reason failure"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
 		},
 		{
 			"name" : "_Python3_NumPy_REASON_FAILURE",

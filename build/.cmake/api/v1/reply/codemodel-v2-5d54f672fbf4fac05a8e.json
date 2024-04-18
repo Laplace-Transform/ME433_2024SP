@@ -9,7 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						80
+						81
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -25,7 +25,7 @@
 					[
 						2,
 						3,
-						79
+						80
 					],
 					"jsonFile" : "directory-pico-sdk-Debug-61307517dc31c0df3431.json",
 					"minimumCMakeVersion" : 
@@ -53,7 +53,7 @@
 					[
 						4,
 						16,
-						76
+						77
 					],
 					"jsonFile" : "directory-pico-sdk.src-Debug-7710845d6e9852a45a91.json",
 					"minimumCMakeVersion" : 
@@ -264,14 +264,14 @@
 						64,
 						65,
 						66,
-						67,
 						68,
 						69,
 						70,
 						71,
 						72,
 						73,
-						75
+						74,
+						76
 					],
 					"jsonFile" : "directory-pico-sdk.src.rp2_common-Debug-a200c3856becfe7e68d2.json",
 					"minimumCMakeVersion" : 
@@ -829,6 +829,10 @@
 				},
 				{
 					"build" : "pico-sdk/src/rp2_common/pico_cyw43_driver",
+					"childIndexes" : 
+					[
+						67
+					],
 					"jsonFile" : "directory-pico-sdk.src.rp2_common.pico_cyw43_driver-Debug-b9143095850fe836caff.json",
 					"minimumCMakeVersion" : 
 					{
@@ -836,7 +840,22 @@
 					},
 					"parentIndex" : 16,
 					"projectIndex" : 1,
-					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_cyw43_driver",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus",
+					"jsonFile" : "directory-pico-sdk.src.rp2_common.pico_cyw43_driver.cybt_shared_bus-Debug-98f1ca620f447a0294e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 66,
+					"projectIndex" : 1,
+					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus"
 				},
 				{
 					"build" : "pico-sdk/src/rp2_common/pico_lwip",
@@ -908,7 +927,7 @@
 					"build" : "pico-sdk/src/rp2_common/pico_fix",
 					"childIndexes" : 
 					[
-						74
+						75
 					],
 					"jsonFile" : "directory-pico-sdk.src.rp2_common.pico_fix-Debug-8bfd07459d9b05763ee7.json",
 					"minimumCMakeVersion" : 
@@ -926,7 +945,7 @@
 					{
 						"string" : "3.13"
 					},
-					"parentIndex" : 73,
+					"parentIndex" : 74,
 					"projectIndex" : 1,
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration"
 				},
@@ -945,8 +964,8 @@
 					"build" : "pico-sdk/src/rp2040",
 					"childIndexes" : 
 					[
-						77,
-						78
+						78,
+						79
 					],
 					"jsonFile" : "directory-pico-sdk.src.rp2040-Debug-82cdcbd50dd0b3155a2d.json",
 					"minimumCMakeVersion" : 
@@ -964,7 +983,7 @@
 					{
 						"string" : "3.13"
 					},
-					"parentIndex" : 76,
+					"parentIndex" : 77,
 					"projectIndex" : 1,
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040/hardware_regs"
 				},
@@ -975,7 +994,7 @@
 					{
 						"string" : "3.13"
 					},
-					"parentIndex" : 76,
+					"parentIndex" : 77,
 					"projectIndex" : 1,
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/src/rp2040/hardware_structs"
 				},
@@ -991,15 +1010,15 @@
 					"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/Pico examples and SDK/pico-sdk/docs"
 				},
 				{
-					"build" : "DAC",
-					"jsonFile" : "directory-DAC-Debug-15b5c44d81e460de1af8.json",
+					"build" : "MAIN",
+					"jsonFile" : "directory-MAIN-Debug-8fc1ed6b4e7f21838df3.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "DAC",
+					"source" : "MAIN",
 					"targetIndexes" : 
 					[
 						0
@@ -1017,7 +1036,7 @@
 					"directoryIndexes" : 
 					[
 						0,
-						80
+						81
 					],
 					"name" : "my_project",
 					"targetIndexes" : 
@@ -1106,7 +1125,8 @@
 						76,
 						77,
 						78,
-						79
+						79,
+						80
 					],
 					"name" : "pico_sdk",
 					"parentIndex" : 0,
@@ -1114,38 +1134,46 @@
 					[
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 80,
-					"id" : "DAC::@fa3d855b193503f666ae",
-					"jsonFile" : "target-DAC-Debug-b9875edb408ad166b8f3.json",
-					"name" : "DAC",
+					"directoryIndex" : 81,
+					"id" : "MAIN::@93173a1e834a3cba0df0",
+					"jsonFile" : "target-MAIN-Debug-c57c318cf1f193bd6449.json",
+					"name" : "MAIN",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-04018956fab2116447ea.json",
+					"jsonFile" : "target-bs2_default-Debug-ac6a8c89f9416782c618.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default_bin::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default_bin-Debug-7350e514c7c37aa71f9b.json",
+					"jsonFile" : "target-bs2_default_bin-Debug-015a59b0a159f4eda980.json",
 					"name" : "bs2_default_bin",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default_padded_checksummed_asm-Debug-e0892bf6b75dac6f5488.json",
+					"jsonFile" : "target-bs2_default_padded_checksummed_asm-Debug-b1961d977472c7905bff.json",
 					"name" : "bs2_default_padded_checksummed_asm",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 66,
+					"id" : "cyw43_driver_picow_cyw43_bus_pio_spi_pio_h::@c2fb4f534018e64680d5",
+					"jsonFile" : "target-cyw43_driver_picow_cyw43_bus_pio_spi_pio_h-Debug-83b38d236879e44e7f5c.json",
+					"name" : "cyw43_driver_picow_cyw43_bus_pio_spi_pio_h",
 					"projectIndex" : 1
 				}
 			]
@@ -1154,8 +1182,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW4/build",
-		"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW4"
+		"build" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build",
+		"source" : "C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW3"
 	},
 	"version" : 
 	{

@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "CDC",
-		"source" : "CDC"
+		"build" : "MAIN",
+		"source" : "MAIN"
 	}
 }

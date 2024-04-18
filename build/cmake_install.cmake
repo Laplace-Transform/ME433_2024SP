@@ -40,7 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/pico-sdk/cmake_install.cmake")
-  include("C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/CDC/cmake_install.cmake")
+  include("C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/build/MAIN/cmake_install.cmake")
 
 endif()
 
