@@ -1,106 +1,63 @@
 #include <stdio.h>
-#include <math.h>
-#include "pico/stdlib.h"
-#include "hardware/spi.h"
+
+#include "hardware/i2c.h"
 #include "pico/binary_info.h"
+#include "pico/stdlib.h"
 
-#define CS 17
-#define SCK 18
-#define SDI 19
 
-#define M_PI 3.14159265358979323846
+#define MCP23008_ADDR 0b100000
 
-static inline void cs_select() {
-    asm volatile("nop \n nop \n nop");
-    gpio_put(CS, 0);  // Active low
-    asm volatile("nop \n nop \n nop");
-}
+#define MCP23008_IODIR 0x00
+#define MCP23008_GPIO  0x09
+#define MCP23008_OLAT  0x0A
 
-static inline void cs_deselect() {
-    asm volatile("nop \n nop \n nop");
-    gpio_put(CS, 1);
-    asm volatile("nop \n nop \n nop");
-}
+#define I2C_SDA_PIN 4
+#define I2C_SCL_PIN 5
 
-static void write_register(uint8_t reg, uint8_t data) {
-    uint8_t buf[2];
-    buf[0] = reg;
-    buf[1] = data;
-    cs_select();
-    spi_write_blocking(spi_default, buf, 2);
-    cs_deselect();
-    sleep_ms(1);
-}
+#define LED_PIN PICO_DEFAULT_LED_PIN
 
+void init_mcp23008();
+void set_led(bool state);
+bool read_button();
 
 int main() {
-
     stdio_init_all();
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
 
-    spi_init(spi_default, 1 * 1000 * 1000);
-    gpio_set_function(SCK, GPIO_FUNC_SPI);
-    gpio_set_function(SDI, GPIO_FUNC_SPI);
-      
-    // // Make the SPI pins available to picotool
-    // bi_decl(bi_2pins_with_func(SDI, SCK, GPIO_FUNC_SPI));
+    i2c_init(i2c_default, 100000); //100 kHz
+    gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
 
-    gpio_init(CS);
-    gpio_set_dir(CS, GPIO_OUT);
-    gpio_put(CS, 1);
+    init_mcp23008();
 
-    // // Make the CS pin available to picotool
-    // bi_decl(bi_1pin_with_name(CS, "SPI CS"));  
-    
-    int max = 1023;
-    float time = 0;
-    int sinwave = 0;
-    int triangle = 0;
     while (1) {
-        int sinwave = max/2 +  max/2*sin(2*M_PI*2*time);
 
-        if (time<= 0.5) {
-            triangle = 2*max * time;
-        }
-        else{
-            triangle = 2*max  - 2*max *time;
-        }
+        gpio_put(LED_PIN, true);
+        sleep_ms(250);
+        gpio_put(LED_PIN, false);
+        sleep_ms(250);
 
-        time = time + 0.01;
+        // Control GP7 LED based on GP0 button state
+        set_led(!read_button());
+        sleep_ms(250);
+    }
+}
 
-        if (time >= 1){
-            time = 0;
-        }
+void init_mcp23008() {
+    uint8_t buf[] = {MCP23008_IODIR, 0x01}; // Set IODIR register, GP0 as input, others as output
+    i2c_write_blocking(i2c_default, MCP23008_ADDR, buf, 2, false);
+}
 
-        // bit shifting
-        int portA = 0;
-        int P = 0;
-        P = P | (portA<<15);
-        P = P | (0b111<<12);
-        P = P | (sinwave<<2);
-        int P1 = P>>8;
-        int P2 = P & 0xff;
+void set_led(bool state) {
+    uint8_t buf[] = {MCP23008_OLAT, state << 7}; // Control LED by setting the highest bit of OLAT register
+    i2c_write_blocking(i2c_default, MCP23008_ADDR, buf, 2, false);
+}
 
-        write_register(P1, P2);
-        sleep_ms(5);
-        
-        int portB = 1;
-        P = 0;
-        P = P | (portB<<15);
-        P = P | (0b111<<12);
-        P = P | (triangle<<2);
-        P1 = P>>8;
-        P2 = P & 0xff;
-
-        write_register(P1, P2);
-
-        sleep_ms(5);
-        
-
-        
-   }
-
-        // write_register(0b11111111, 0b111111 << 2);//write B
-        // write_register(0b01111111, 0b111111 << 2);//write A
-        
-    // Chip select is active-low, so we'll initialise it to a driven-high state
+bool read_button() {
+    uint8_t reg = MCP23008_GPIO;
+    uint8_t value;
+    i2c_write_blocking(i2c_default, MCP23008_ADDR, &reg, 1, true); // Hold bus control
+    i2c_read_blocking(i2c_default, MCP23008_ADDR, &value, 1, false); // Release bus control
+    return (value & 0x01) != 0; // Return the state of GP0
 }
