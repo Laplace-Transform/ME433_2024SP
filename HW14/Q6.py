@@ -17,22 +17,21 @@ def myfft(data,time):
     return abs(Y),frq
 
 def mymaf_IIR(data,A,B):
-    mafdata = []
-    window_size = 2
-    for i in range(len(data) - window_size + 1):
-        window = data[i:i + window_size]
+    mafdata = [0]
 
-        average = window[0]*A + window[1]*B
+    for i in range(len(data)):
+
+        average = mafdata[-1] *A + data[i] *B
         mafdata = np.append([mafdata],[average])
-    mafdata = np.append(np.zeros(window_size-1),[mafdata])
-    return mafdata
+
+    return mafdata[1:]
 
 
 t = [] # column 0
 data1 = [] # column 1
 
 
-with open('C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW14/sigA.csv') as f:
+with open('C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW14/sigD.csv') as f:
     # open the csv file
     reader = csv.reader(f)
     for row in reader:
@@ -41,7 +40,7 @@ with open('C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW
             data1.append(float(row[1])) # second column
 
 
-A = 0.5
+A = 0.95
 B = 1-A
 data2 = mymaf_IIR(data1,A,B)
 
@@ -51,7 +50,7 @@ ax1.plot(t,data1,'black')
 ax1.set_xlabel('Time')
 ax1.set_ylabel('Amplitude')
 ax1.plot(t,data2,'red')
-ax1.set_title('sigA,A=%f,B=%f' % (A,B))
+ax1.set_title('sigD,A=%f,B=%f' % (A,B))
 
 
 plt.show()

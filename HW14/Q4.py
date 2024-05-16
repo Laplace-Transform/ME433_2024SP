@@ -21,7 +21,7 @@ t = [] # column 0
 data1 = [] # column 1
 
 
-with open('C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW14/sigD.csv') as f:
+with open('C:/Users/59201/Desktop/NU/2024 Spring/ME433/ME433_2024SP_Homeworks/HW14/sigA.csv') as f:
     # open the csv file
     reader = csv.reader(f)
     for row in reader:
