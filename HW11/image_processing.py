@@ -27,5 +27,5 @@ print(np.average(index_high)/width)
 
 
 
-# plt.plot(index,sum,'k-')
-# plt.show()
+plt.plot(index,sum,'k-')
+plt.show()
