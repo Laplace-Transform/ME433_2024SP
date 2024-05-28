@@ -97,23 +97,23 @@ void on_uart_rx() {
         chars_index++;
 
         if (ch == '\n'){
-            sscanf(message_UART,"%d",&mode);
+            sscanf(message_UART,"%f",&mode);
             chars_index = 0;
         }
         
         
         
         if(mode <= 0.4){
-            gpio_put(LED_PIN, false);
-            turnright();
+            gpio_put(LED_PIN, true);
+            turnleft();
 
         }
         else if(mode >=0.6){
-            gpio_put(LED_PIN, false);
-            turnleft();
+            gpio_put(LED_PIN, true);
+            turnright();
         }
         else{
-            gpio_put(LED_PIN, true);    
+            gpio_put(LED_PIN, false);    
             forward();
         }
     }

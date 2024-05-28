@@ -579,14 +579,14 @@ Disassembly of section .text:
 10000504:	061b      	lsls	r3, r3, #24
 10000506:	2280      	movs	r2, #128	@ 0x80
 10000508:	0492      	lsls	r2, r2, #18
-1000050a:	619a      	str	r2, [r3, #24]
-1000050c:	f7ff ffe0 	bl	100004d0 <turnright>
+1000050a:	615a      	str	r2, [r3, #20]
+1000050c:	f7ff ffd3 	bl	100004b6 <turnleft>
 10000510:	e006      	b.n	10000520 <on_uart_rx+0x34>
 10000512:	23d0      	movs	r3, #208	@ 0xd0
 10000514:	061b      	lsls	r3, r3, #24
 10000516:	2280      	movs	r2, #128	@ 0x80
 10000518:	0492      	lsls	r2, r2, #18
-1000051a:	615a      	str	r2, [r3, #20]
+1000051a:	619a      	str	r2, [r3, #24]
 1000051c:	f7ff ffbe 	bl	1000049c <forward>
 10000520:	4b14      	ldr	r3, [pc, #80]	@ (10000574 <on_uart_rx+0x88>)
 10000522:	699b      	ldr	r3, [r3, #24]
@@ -615,8 +615,8 @@ Disassembly of section .text:
 10000552:	061b      	lsls	r3, r3, #24
 10000554:	2280      	movs	r2, #128	@ 0x80
 10000556:	0492      	lsls	r2, r2, #18
-10000558:	619a      	str	r2, [r3, #24]
-1000055a:	f7ff ffac 	bl	100004b6 <turnleft>
+10000558:	615a      	str	r2, [r3, #20]
+1000055a:	f7ff ffb9 	bl	100004d0 <turnright>
 1000055e:	e7df      	b.n	10000520 <on_uart_rx+0x34>
 10000560:	bd10      	pop	{r4, pc}
 10000562:	46c0      	nop			@ (mov r8, r8)
